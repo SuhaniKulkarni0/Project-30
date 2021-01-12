@@ -1,11 +1,8 @@
 class Polygon{
 
-    constructor(x,y,raduis,angle){
-       
-        
-  
+    constructor(x,y,radius,angle){
 
-        this.raduis = raduis
+        this.radius = radius
         var options = {
             'restitution':0.8,
             'friction':1.0,
@@ -22,8 +19,8 @@ class Polygon{
         
         translate(this.body.position.x, this.body.position.y);
         imageMode(CENTER)
-        image(polyImg, pos.position.x, pos.position.y,40,40)
-        ellipse( 0, 0, this.radius);
+        image(polyImg, pos.x, pos.y,40,40)
+        //ellipse( 0, 0, this.radius);
         pop();
         
 
